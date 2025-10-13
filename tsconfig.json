@@ -1,0 +1,36 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "esnext",
+    "esModuleInterop": true,
+    "strict": true,
+    "moduleResolution": "node",
+    "noEmit": true,
+
+    "outDir": "dist",
+
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,
+    "noUncheckedIndexedAccess": true,
+    "noImplicitAny": true,
+
+
+    "baseUrl": ".",
+    "paths": {
+      "@prototype": ["./src/prototype/index.ts"],
+      "@extra": ["./src/helpers/global.helper.ts"],
+      "@config": ["./src/config/index.ts"],
+      "@helper/*": ["./src/helpers/*"],
+      "@helper/automation": ["./src/helpers/automation/index.ts"],
+      "@lib/*": ["./src/lib/*"],
+      "@pages/*": ["./src/pages/*"],
+      "@pages": ["./src/pages/index.ts"]
+    },
+  },
+  "tsc-alias": {
+    "resolveFullPaths": true,
+    "verbose": false
+  },
+  "include": ["src", "types", "examples"],
+  "exclude": ["node_modules"]
+}
